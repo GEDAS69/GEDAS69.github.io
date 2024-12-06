@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+    <script src="functions.js"></script>
+</head>
 
 
     <!-- Headeris -->
@@ -41,5 +42,14 @@
         <p class="b">Useful links</p>
         <a href="https://www.youtube.com" class="b">Youtube</a>
      </div>
+
+     <button onclick="darkMode()">Toggle dark mode</button>
+
+<script>
+function darkMode() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 </html>
