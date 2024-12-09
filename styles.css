@@ -2,42 +2,6 @@
         background-color:#E9967A;
     }
 
-    .dark-mode{
-        background-color: #744B3D;
-
-        .header{
-            background-color: #2D2D2D;
-            text-align: center;
-            font-family: Roboto, sans-serif;
-            font-weight: 450;
-            font-size: medium;
-            color: white;
-            }
-    }
-    
-    h2.a{font-family: "Open Sans", sans-serif;
-        font-weight: 300;
-        font-size: large;
-        color: #F5F5DC;
-        }
-
-    h2.b{font-family: "Open sans", sans-serif;
-        font-weight: bold;
-        color:#F5F5DC;
-        text-align: center;}
-
-    p.a {font-family: "Roboto", sans-serif;
-    font-weight: lighter;
-    font-size: medium;
-    color: #F5F5DC;
-    }
-
-    p.b{font-family: "Roboto", sans-serif;
-    font-weight: light;
-    font-size: larger;
-    color: #000000 ;
-    }
-
     a.a:link, a.a:visited {
     background-color: #ff4362;
     color: whitesmoke;
@@ -74,12 +38,110 @@
     color: #2D2D2D;
     }
 
-    .aBox{
-    background-color:#D3D3D3;
-    text-align: left;
+    .hero{
+        position: relative;
+        height: calc(100vh - 80px);
+        background: url(Photos/myphoto.jpg);
+        background-size: cover;
     }
+
+    .hero-content{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #333;
+    }
+
+    .hero-content h1{
+        font-family: "Roboto", sans-serif;
+        font-weight: medium;
+        font-size: 45px;
+        color: white;
+    }
+
+    .hero-content p{
+        font-family: "Roboto", sans-serif;
+        font-weight: medium;
+        font-size: 16px;
+        color: white;
+    }
+    
+    .footer{
+    background-color:#D3D3D3;
+    text-align: center;
+    #yt{
+        width:50px;
+        height:auto;
+    }
+    #fb{
+        width:50px;
+        height:auto;
+    }
+    #dark{
+        width:50px;
+        height:auto;
+    }
+    }
+    button{
+        width: 50px;
+        height: auto;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .btn1 img {
+        transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .btn1.rotated img {
+        transform: rotate(180deg);
+        filter: invert(1);
+    }
+
+    .btn2 img {
+        transition: filter 0.5s ease;
+    }
+
+    .btn2.dark img {
+        filter: invert(1);
+    }
+
+    .btn3 img {
+        transition: filter 0.5s ease;
+    }
+
+    .btn3.dark img {
+        filter: invert(1);
+    }
+
+}
 
     .container img{
     max-width:20%;
     object-fit: contain;
     }
+
+    .dark-mode {
+        background-color: #744B3D;
+    
+    
+    .header {
+        background-color: #2D2D2D;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-weight: 450;
+        font-size: medium;
+        color: white;
+    }
+
+    .footer{
+        background-color:#2D2D2D;
+        text-align: center;
+        #logo {
+            width: 50px;
+            height: auto;
+        }
+    }
+}

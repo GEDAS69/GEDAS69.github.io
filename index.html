@@ -13,43 +13,40 @@
 
 
     <!-- Headeris -->
-     <div class="header">
-    <h1>Main Page</h1>
+     <header class="header">
+    <h1>Hawk Thua</h1>
     <a href="index.html" class="a" >Home</a>
+    <a href="about.html" class="a" >About</a>
     <a href="resume.html" class="a">Resume</a>
     <a href="contacts.html" class="a">Contacts</a>
     <a href="services.html" class="a">Services</a>
     <a href="portfolio.html" class="a">Portfolio</a>
-    <div class="container">
-        <img src = "Photos/myphoto.jpg"
-    alt=""></div>
-    <br>
-    </div>
+     </header>
 
-    <h2 class="b">Information</h1>
-    <!-- Text blockas -->
-     <section>
-    <h2 class="a">Welcome to the website!</h2>
-    <p class="a">We’re glad you’re here. This is a space for exploration, connection, and inspiration. Whether you’re looking for information, ideas, or just browsing, we aim to provide an enjoyable and enriching experience.</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Gedas Stanislovaitis</h1>
+            <p>Professional website designer</p>
+        </div>
     </section>
 
-    <section>
-    <h2 class="a">Discover and Connect</h2>
-    <p class="a">Take your time to explore what we have to offer. From thought-provoking content to useful resources, there’s something here for everyone. Stay curious, stay inspired, and let’s make this journey together.</p>
-    </section>
-    
-     <div class="aBox">
-        <p class="b">Useful links</p>
-        <a href="https://www.youtube.com" class="b">Youtube</a>
-     </div>
+     <footer class="footer">
 
-     <button onclick="darkMode()">Toggle dark mode</button>
+        <p>© Copyright <b>Gedas</b> All Rights Reserved</p>
+    <button class="btn2" onclick="window.location.href='https://www.youtube.com/'">
+        <img id="yt" src="photos/yt.png"
+        alt="Youtube">
+    </button>
 
-<script>
-function darkMode() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
+    <button class="btn3" onclick="window.location.href='https://www.facebook.com/'">
+        <img id="fb" src="photos/fb.png"
+        alt="Facebook">
+    </button>
+
+    <button class="btn1" onclick="darkMode()">
+        <img id="dark" src="photos/dark.png"
+        alt="Dark Mode">
+    </button>
+</footer>
 </body>
 </html>
