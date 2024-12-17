@@ -281,3 +281,55 @@ button {
     display: block;
     opacity: 1;
 }
+
+.math-section {
+    /* Give this section a different background, height, or design */
+    background: linear-gradient(#f0f0f0, #cccccc);
+    padding: 50px 0;
+    position: relative;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.math-content {
+    text-align: center;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}
+
+.math-content h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.math-content p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* If you want to style the math formula specifically */
+.math-content math {
+    display: block;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+
+.clock-section {
+    background: transparent;
+    padding: 0px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.clock-content {
+    text-align: center;
+    color: #333;
+    font-family: "Roboto", sans-serif;
+}

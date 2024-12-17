@@ -1,18 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Gedas Stanislovaitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <body style="background-color:#E9967A"></body>
-</head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head> 
 <body>
-    <!--Linkai-->
-    <br>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="resume.html">Resume</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="Services.html">Services</a>
-    <a>Portfolio</a>
+
+    <!--Headeris-->
+    <header class="header">
+        <img src="Photos/logo.jpg">
+        <div class="nav-links">
+        <a href="index.html" class="a" >Home</a>
+        <a href="about.html" class="a" >About</a>
+        <a href="resume.html" class="a">Resume</a>
+        <a href="contacts.html" class="a">Contacts</a>
+        <a href="services.html" class="a">Services</a>
+        <a href="portfolio.html" class="a">Portfolio</a>
+        </div>
+        <section class="clock-section">
+            <div class="clock-content">
+                <p>The current time is:</p>
+                <p id="clock" aria-live="polite"></p>
+            </div>
+         </header>
+    
+    <!--Main-->
+    <section class="math-section">
+        <div class="math-content">
+            <h1>Mathematical Objects with MathML</h1>
+            <p>
+                Below is an example of a complex integral expression displayed using MathML and MathJax.
+            </p>
+            <p>
+                The integral shown is commonly found in complex analysis, representing the value of a function 
+                f(a) defined by a contour integral around a singularity.
+            </p>
+            <p>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mrow title="Groups mathematical elements horizontally">
+                        <mi title="Math identifier: variable/function name 'f'">f</mi>
+                        <mo title="Math operator: opening parenthesis">(</mo>
+                        <mi title="Math identifier: variable 'a'">a</mi>
+                        <mo title="Math operator: closing parenthesis">)</mo>
+                        <mo title="Math operator: equals sign">=</mo>
+                        <mfrac title="Represents a fraction with numerator and denominator">
+                            <mrow title="Numerator of the fraction">
+                                <mn title="Math number '1'">1</mn>
+                            </mrow>
+                            <mrow title="Denominator of the fraction">
+                                <mn title="Math number '2'">2</mn>
+                                <mi title="Math identifier: π (pi)">π</mi>
+                                <mi title="Math identifier: i (imaginary unit)">i</mi>
+                            </mrow>
+                        </mfrac>
+                        <mo title="Contour integral operator">∮</mo>
+                        <mfrac title="Fraction for f(z)/(z - a)">
+                            <mrow title="Numerator: f(z)">
+                                <mi title="Math identifier: f">f</mi>
+                                <mo title="Parenthesis operator">(</mo>
+                                <mi title="Math identifier: z">z</mi>
+                                <mo title="Parenthesis operator">)</mo>
+                            </mrow>
+                            <mrow title="Denominator: (z - a)">
+                                <mo title="Parenthesis operator">(</mo>
+                                <mi title="Math identifier: z">z</mi>
+                                <mo title="Minus operator">−</mo>
+                                <mi title="Math identifier: a">a</mi>
+                                <mo title="Parenthesis operator">)</mo>
+                            </mrow>
+                        </mfrac>
+                        <mi title="Math identifier: d (differential)">d</mi>
+                        <mi title="Math identifier: z (variable of integration)">z</mi>
+                    </mrow>
+                </math>
+            </p>
+            <p>
+                This formula often relates to residues in the complex plane and can help evaluate integrals via the Residue Theorem.
+            </p>
+        </div>
+    </section>
+
+
+
+        <!--Footeris-->
+        <footer class="footer">
+            <p>© Copyright <b>Gedas</b> All Rights Reserved</p>
+        <button class="btn2" onclick="window.location.href='https://www.youtube.com/'">
+            <img id="yt" src="photos/yt.png"
+            alt="Youtube">
+        </button>
+    
+        <button class="btn3" onclick="window.location.href='https://www.facebook.com/'">
+            <img id="fb" src="photos/fb.png"
+            alt="Facebook">
+        </button>
+    
+        <button id="toggle-dark-mode" class="btn1" onclick="darkMode()">
+            <img id="dark" src="photos/dark.png"
+            alt="Dark Mode">
+        </button>
+    </footer>
+    
+    
+    <button id="backToTopBtn" title="Go to top">↑</button>
+<script src="functions.js"></script>
 </body>
 </html>

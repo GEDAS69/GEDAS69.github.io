@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="author" content="Gedas Stanislovaitis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <body style="background-color:#E9967A"></body>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--Linkai-->
-    <br>
-    <a href="index.html">Home</a>
-    <a>About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="resume.html">Resume</a>
-    <a href="contacts.html">Contacts</a>
-    <a href="Services.html">Services</a>
+
+    <header class="header">
+        <img src="Photos/logo.jpg">
+        <div class="nav-links">
+        <a href="index.html" class="a" >Home</a>
+        <a href="about.html" class="a" >About</a>
+        <a href="resume.html" class="a">Resume</a>
+        <a href="contacts.html" class="a">Contacts</a>
+        <a href="services.html" class="a">Services</a>
+        <a href="portfolio.html" class="a">Portfolio</a>
+        </div>
+        <section class="clock-section">
+            <div class="clock-content">
+                <p>The current time is:</p>
+                <p id="clock" aria-live="polite"></p>
+            </div>
+         </header>
+    
+<button id="backToTopBtn" title="Go to top">↑</button>
+<script src="functions.js"></script>
 </body>
 </html>

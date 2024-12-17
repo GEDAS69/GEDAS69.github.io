@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('toggle-dark-mode');
 
     toggleButton.addEventListener('click', function() {
-        // Toggle the dark-mode class on the body
+
         bodyElement.classList.toggle('dark-mode');
 
-        // Additional styling changes if you want to rotate buttons or invert icons:
+
         const button = document.querySelector('.btn1');
         button.classList.toggle('rotated');
 
@@ -18,10 +18,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Select the new back-to-top button
+
 const backToTopBtn = document.getElementById('backToTopBtn');
 
-// Add scroll event to show/hide the button
+
 window.addEventListener('scroll', function() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         backToTopBtn.classList.add('show');
@@ -30,7 +30,28 @@ window.addEventListener('scroll', function() {
     }
 });
 
-// Add click event to scroll to top smoothly
+
 backToTopBtn.addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+function getCurrentTime() {
+    const now = new Date();
+    let hours = now.getHours().toString().padStart(2, '0');
+    let minutes = now.getMinutes().toString().padStart(2, '0');
+    let seconds = now.getSeconds().toString().padStart(2, '0');
+    return `${hours}:${minutes}:${seconds}`;
+}
+
+
+function updateClock() {
+    const clockElement = document.getElementById('clock');
+    clockElement.textContent = getCurrentTime();
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    updateClock();
+    setInterval(updateClock, 1000);
 });
