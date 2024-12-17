@@ -283,7 +283,6 @@ button {
 }
 
 .math-section {
-    /* Give this section a different background, height, or design */
     background: linear-gradient(#f0f0f0, #cccccc);
     padding: 50px 0;
     position: relative;
@@ -311,7 +310,6 @@ button {
     margin: 10px 0;
 }
 
-/* If you want to style the math formula specifically */
 .math-content math {
     display: block;
     margin: 20px auto;
@@ -332,4 +330,66 @@ button {
     text-align: center;
     color: #333;
     font-family: "Roboto", sans-serif;
+}
+
+.about {
+    position: relative;
+    z-index: 1;
+    height: calc(100vh - 70px);
+    background-color: #B1B1B1;
+    font-family: Roboto, sans-serif;
+    font-weight: 450;
+    font-size: medium;
+}
+
+#modalBackground {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+}
+
+#modalBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+.modal-trigger {
+    background-color: #a0a0a0;
+    color: #2D2D2D;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.modal-trigger:hover {
+    background-color: #969696;
+}
+
+.result-row {
+    display: flex;
+    gap: 15px; /* Space between elements */
+    flex-wrap: wrap; /* Allow wrapping */
+    align-items: center; /* Vertically align items */
+    font-size: 16px;
+    color: #333;
+}
+
+.result-row span {
+    font-weight: bold;
 }

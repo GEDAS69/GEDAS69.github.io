@@ -26,6 +26,76 @@
             </div>
          </header>
     
+         <section class="about">
+            <div class="hero-content">
+                <h1>About HAWK THUA</h1>
+                <p>Welcome to Hawk Thua, your trusted partner in professional web design and development.</p>
+                <p>We specialize in crafting visually stunning, user-friendly websites that are tailored to meet the unique needs of your business.</p><br>
+                <p>↓Fill out the form below and we will contact you about your very own website!↓</p>
+                <a href="#" class="modal-trigger" onclick="openModal()">Click here to apply!</a>
+            
+                <!-- Modal Structure -->
+                <div id="modalBackground">
+                    <div id="modalBox">
+                        <form id="contactForm">
+                            <label for="firstName">First Name:</label><br>
+                            <input type="text" id="firstName" name="firstName"><br><br>
+                            
+                            <label for="lastName">Last Name:</label><br>
+                            <input type="text" id="lastName" name="lastName"><br><br>
+                            
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email"><br><br>
+
+                            <label for="address">Address:</label><br>
+                            <input type="address" id="address" name="address"><br><br>
+                            
+                            <label for="question1">How would you rate the design quality of your current website?</label><br>
+                            <input type="number" id="question1" min="1" max="10"><br><br>
+
+                            <label for="question2">How important is website responsiveness (mobile-friendliness) for you?</label><br>
+                            <input type="number" id="question2" min="1" max="10"><br><br>
+
+                            <label for="question3">What is your priority: appearance or functionality of the website?</label><br>
+                            <input type="number" id="question3" min="1" max="10"><br><br>
+
+                            <label for="question4">How satisfied are you with the speed and performance of your current website?</label><br>
+                            <input type="number" id="question4" min="1" max="10"><br><br>
+
+                            <label for="question5">Would you like additional features like SEO optimization, blogs, or e-commerce?</label><br>
+                            <input type="number" id="question5" min="1" max="10"><br><br>
+            
+                            <!-- Modal Action Buttons -->
+                            <a href="#" class="modal-trigger" onclick="saveFormData()">Submit</a>
+                            <a href="#" class="modal-trigger" onclick="closeModal()">Close</a>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <div id="formOutput" style="margin-top: 20px; font-family: Arial, sans-serif;"></div>  
+
+          <!--Footeris-->
+     <footer class="footer">
+        <p>© Copyright <b>Gedas</b> All Rights Reserved</p>
+    <button class="btn2" onclick="window.location.href='https://www.youtube.com/'">
+        <img id="yt" src="photos/yt.png"
+        alt="Youtube">
+    </button>
+
+    <button class="btn3" onclick="window.location.href='https://www.facebook.com/'">
+        <img id="fb" src="photos/fb.png"
+        alt="Facebook">
+    </button>
+
+    <button id="toggle-dark-mode" class="btn1" onclick="darkMode()">
+        <img id="dark" src="photos/dark.png"
+        alt="Dark Mode">
+    </button>
+</footer>
+
 <button id="backToTopBtn" title="Go to top">↑</button>
 <script src="functions.js"></script>
 </body>
